@@ -18,6 +18,9 @@
         <div class="z-depth-1  post-wrapper white-bg single-post">
 
           {{ partial "post-header.html" . }}
+          <div class="d-block d-md-none d-xl-none">
+            {{ partial "toc.html" . }}
+          </div>
 
 
           <div class="post-content markdown">
@@ -73,7 +76,6 @@
 
       </div>
       <!-- /.Grid column -->
-
       {{ partial "toc.html" . }}
 
     </div>
